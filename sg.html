@@ -12,6 +12,10 @@
         <link rel="stylesheet" href="styles/main.css">
 
         <script src="scripts/vendor/modernizr.js"></script>
+
+        
+<link rel="stylesheet" href="styles/sg.css">
+
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -33,6 +37,7 @@
 </div>
 <div class="row text-center text-muted">
     <p id="logLabel"></p>
+    <p id="outputlabel"></p>
 </div>
 
 <div class="row">
@@ -46,26 +51,27 @@
     </div>
 </div>
 
-<table class="table table-striped">
-    <tr>
-        <td>
-            <span class="label label-primary">theta</span>
-        </td>
-        <td>
-            <a id="thetalabel"></a>
-        </td>
-        <td style="width: 80%;">
-            <div class="sliders" id="thetas"></div>
-        </td>
-    </tr>
-</table>
-<div class="row text-right">
-    <br />
-    <br />
-    <button id="update" type="button" class="sliders btn btn-default">Update</button>
+<br />
+
+<div class="row">
+    <div class="col-sm-2">
+        <div id="table"></div>
+    </div>
+    <div class="col-sm-10">
+        <div class="row ">
+            <br />
+            <button id="addrow" type="button" class="sliders btn btn-default">Add Row</button>
+            <br />
+            <button id="update" type="button" class="sliders btn btn-default">Update Graph</button>
+            <br />
+            <button id="thetaupdate" type="button" class="sliders btn btn-default">Update Theta</button>
+        </div>
+        <br />
+        <br />
+
+    </div>
+
 </div>
-<br />
-<br />
 
 
             <!--<div class="footer">-->
