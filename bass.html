@@ -14,7 +14,8 @@
         <script src="scripts/vendor/modernizr.js"></script>
 
         
-        
+<link rel="stylesheet" href="styles/bass.css">
+
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -26,25 +27,24 @@
                 <ul class="nav nav-pills pull-right">
                     <li class="active"><a href="/">home</a></li>
                     <li class="active"><a href="/bass.html">bass</a></li>
+                    <li class="active"><a href="/sg.html">shifted geometric model</a></li>
+                    <li class="active"><a href="/bass.html">shifted beta geometric model</a></li>
                 </ul>
                 <h3 class="text-primary">Marketing Models</h3>
             </div>
 
             
 <div class="row text-center text-muted">
-    <h4>Bass Model</h4p>
+    <h4>Bass Model</h4>
 </div>
 <div class="row text-center text-muted">
     <p>M = 100000</p>
 </div>
 
+
 <div class="row">
-    <div class="col-sm-1 vcenter">
-        <p class="rotateVerticle text-center">New Adoptors</p>
-    </div><!--
-  --><div class="col-sm-11 vcenter">
-        <canvas id="chartCanvas" width="600" height="400" style="width: 600px; height: 400px;"></canvas>
-        <p class="text-center">Days</p>
+    <div class="col-sm-12">
+        <div id="chartDiv"></div>
     </div>
 </div>
 
@@ -95,6 +95,9 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+
+
+        <script src="scripts/site.js"></script>
 
         <script src="scripts/vendor.js"></script>
 

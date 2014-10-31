@@ -27,6 +27,8 @@
                 <ul class="nav nav-pills pull-right">
                     <li class="active"><a href="/">home</a></li>
                     <li class="active"><a href="/bass.html">bass</a></li>
+                    <li class="active"><a href="/sg.html">shifted geometric model</a></li>
+                    <li class="active"><a href="/bass.html">shifted beta geometric model</a></li>
                 </ul>
                 <h3 class="text-primary">Marketing Models</h3>
             </div>
@@ -42,16 +44,9 @@
 </div>
 
 <div class="row">
-    <div class="col-sm-1 vcenter">
-        <p class="rotateVerticle text-center">% Survivors</p>
-    </div><!--
-  --><div class="col-sm-5 vcenter">
-        <canvas id="chartCanvas" width="600" height="400" style="width: 600px; height: 400px;"></canvas>
-        <p class="text-center">Year</p>
-    </div>
-    <div class="col-sm-5 vcenter">
-        <div id="legend"></div>
-    </div>
+  <div class="col-sm-12">
+        <div id="chartDiv"></div>
+  </div>
 </div>
 
 <br />
@@ -69,7 +64,7 @@
     </div>
     <div class="col-sm-5">
         <p>Paste comma seperated values here</p>
-        <textarea style="width: 255px; height: 177px;" id="dataEntryBox"></textarea>
+        <textarea style="width: 255px; height: 177px;" id="dataEntryBox">1000, 631, 468, 382, 326, 289, 262, 241</textarea>
         <br />
         <button id="updateTextArea" type="button" class="sliders btn btn-default">Update Graph</button>
     </div>
@@ -90,6 +85,9 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+
+
+        <script src="scripts/site.js"></script>
 
         <script src="scripts/vendor.js"></script>
 
