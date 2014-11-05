@@ -35,7 +35,7 @@
 
             
 <div class="row text-center text-muted">
-    <h4>SBG Model</h4>
+    <h4>sBG Model</h4>
 </div>
 <div class="row text-center text-muted">
     <p id="logLabel"></p>
@@ -46,9 +46,16 @@
 <div class="row">
   <div class="col-sm-6">
       <div id="chartDiv"></div>
+      <p>Paste comma separated values here</p>
+      <textarea style="width: 500px; height: 50px;" id="dataEntryBox">1000, 631, 468, 382, 326, 289, 262, 241</textarea>
+      <span class="label label-primary">Number of Training Data Points</span>
+      <div class="sliders" id="trainingDataSlider"></div>
+      <br /> <br /> <br /> <br />
+      <button id="updateTextArea" type="button" class="sliders btn btn-default">Update Graph</button>
   </div>
     <div class="col-sm-6">
         <div id="betaDiv"></div>
+        <div id="distBetaDiv"></div>
     </div>
 </div>
 
@@ -56,12 +63,6 @@
 
 <div class="row">
     <div class="col-sm-5">
-        <p>Paste comma separated values here</p>
-        <textarea style="width: 500px; height: 50px;" id="dataEntryBox">1000, 631, 468, 382, 326, 289, 262, 241</textarea>
-        <span class="label label-primary">Number of Training Data Points</span>
-        <div class="sliders" id="trainingDataSlider"></div>
-        <br /> <br /> <br /> <br />
-        <button id="updateTextArea" type="button" class="sliders btn btn-default">Update Graph</button>
     </div>
 </div>
 
