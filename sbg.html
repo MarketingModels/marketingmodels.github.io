@@ -40,35 +40,43 @@
             </nav>
 
             
-<div class="row text-muted">
-    <div class="col-sm-12 text-center">
-        <h4>Shifted Geometric Model</h4>
+<div class="row text-center text-muted">
+    <div class="col-sm-12">
+        <h4>Shifted Beta Geometric Model</h4>
     </div>
-    <div class="col-sm-6 text-right">
+    <div class="col-sm-4">
         <p id="logLabel"></p>
     </div>
-    <div class="col-sm-6">
-        <p id="outputlabel"></p>
+    <div class="col-sm-4">
+        <p id="alphaBetaLabel"></p>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-6">
         <div id="chartDiv"></div>
     </div>
-</div>
 
-<br />
+    <div class="col-sm-6">
+        <div id="betaDiv"></div>
+    </div>
 
-<div class="row controls">
-    <div class="col-sm-10">
+    <div class="col-sm-6 data-entry">
         <p class="instruction">Paste comma separated values here</p>
         <textarea id="dataEntryBox">1000, 631, 468, 382, 326, 289, 262, 241</textarea>
+        <p class="instruction">Select Number of Training Data Points</p>
+        <div class="sliders" id="trainingDataSlider"></div>
+        <br /><br /><br />
+        <div class="text-center">
+            <button id="updateTextArea" type="button" class="sliders btn btn-default">Update Graph</button>
+        </div>
     </div>
-    <div class="col-sm- text-center ">
-        <button id="updateTextArea" type="button" class="sliders btn btn-default">Update Graph</button>
+
+    <div class="col-sm-6">
+        <div id="distBetaDiv"></div>
     </div>
 </div>
+
 
         </div>
 
@@ -90,7 +98,10 @@
         <script src="scripts/plugins.js"></script>
 
         
-    <script src="scripts/sg.js"></script>
+    <script src="scripts/sbg.js"></script>
+
+
+  
 
 </body>
 </html>

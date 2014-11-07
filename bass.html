@@ -40,17 +40,16 @@
             </nav>
 
             
-<div class="row text-muted">
-    <div class="col-sm-12 text-center">
-        <h4>Shifted Geometric Model</h4>
+<div class="row text-center text-muted">
+    <div class="col-sm-12">
+        <h4>Bass Model</h4>
     </div>
-    <div class="col-sm-6 text-right">
-        <p id="logLabel"></p>
+    <div class="col-sm-12">
+        <p>M = 100000</p>
     </div>
-    <div class="col-sm-6">
-        <p id="outputlabel"></p>
-    </div>
+
 </div>
+
 
 <div class="row">
     <div class="col-sm-12">
@@ -58,15 +57,36 @@
     </div>
 </div>
 
-<br />
 
 <div class="row controls">
     <div class="col-sm-10">
-        <p class="instruction">Paste comma separated values here</p>
-        <textarea id="dataEntryBox">1000, 631, 468, 382, 326, 289, 262, 241</textarea>
+        <table class="table table-striped">
+            <tr>
+                <td>
+                    <span class="label label-primary">p</span>
+                </td>
+                <td>
+                    <a id="plabel"></a>
+                </td>
+                <td style="width: 80%;">
+                    <div class="sliders" id="paramp"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="label label-primary">q</span>
+                </td>
+                <td>
+                    <a id="qlabel"></a>
+                </td>
+                <td>
+                    <div class="sliders" id="paramq"></div>
+                </td>
+            </tr>
+        </table>
     </div>
-    <div class="col-sm- text-center ">
-        <button id="updateTextArea" type="button" class="sliders btn btn-default">Update Graph</button>
+    <div class="col-sm-2 text-center">
+        <button id="update" type="button" class="sliders btn btn-default">Update</button>
     </div>
 </div>
 
@@ -90,7 +110,10 @@
         <script src="scripts/plugins.js"></script>
 
         
-    <script src="scripts/sg.js"></script>
+    <script src="scripts/bass.js"></script>
+
+
+  
 
 </body>
 </html>
